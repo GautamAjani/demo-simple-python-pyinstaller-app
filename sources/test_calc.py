@@ -13,6 +13,13 @@ class TestCalc(unittest.TestCase):
         result = calc.add2(1, 2)
         self.assertEqual(result, 3)
 
+    def test_add_integers_with_string(self):
+        """
+        Test that the addition of two integers returns the correct total
+        """
+        result = calc.add2('hello', 1.05)
+        self.assertEqual(result, 'hello1.05')
+
     def test_add_floats(self):
         """
         Test that the addition of two floats returns the correct result
