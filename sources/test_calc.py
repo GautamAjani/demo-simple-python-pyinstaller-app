@@ -27,6 +27,14 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('10.5', 2)
         self.assertEqual(result, 12.5)
 
+    # its just testing purpose
+    def test_add_floats_copy(self):
+        """
+        Test that the addition of two floats returns the correct result
+        """
+        result = calc.add2('10.5', 2)
+        self.assertEqual(result, 12.5)
+
     def test_add_strings(self):
         """
         Test the addition of two strings returns the two strings as one
@@ -43,6 +51,7 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', 3)
         self.assertEqual(result, 'abc3')
 
+    # its just for testing purpose
     def test_add_string_and_integer_copy(self):
         """
         Test the addition of a string and an integer returns them as one
